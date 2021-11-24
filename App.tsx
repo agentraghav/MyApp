@@ -58,20 +58,20 @@ const App = () => {
     };
   }, []);
 
-  const width = (26 * Dimensions.get('window').width) / 100;
-  const height = (3 * Dimensions.get('window').height) / 100;
+  const left = (26 * Dimensions.get('window').width) / 100;
+  const right = (3 * Dimensions.get('window').height) / 100;
 
   const imgViewStyle = useAnimatedStyle(() => {
     const translateX = interpolate(
       scrollPosition.value,
       [0, 400],
-      [width, 25],
+      [left, 25],
       Extrapolate.CLAMP,
     );
     const translateY = interpolate(
       scrollPosition.value,
       [0, 400],
-      [height, 15],
+      [right, 15],
       Extrapolate.CLAMP,
     );
     return {
