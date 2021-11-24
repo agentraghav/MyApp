@@ -58,7 +58,7 @@ const App = () => {
     };
   }, []);
 
-  const width = (30 * Dimensions.get('window').width) / 100;
+  const width = (26 * Dimensions.get('window').width) / 100;
   const height = (3 * Dimensions.get('window').height) / 100;
 
   const imgViewStyle = useAnimatedStyle(() => {
