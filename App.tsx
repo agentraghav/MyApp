@@ -18,9 +18,6 @@ import Animated, {
 } from 'react-native-reanimated';
 import {styles} from './styles';
 
-const minHeaderHeight = 70;
-const maxHeaderHeight = Dimensions.get('window').height / 4;
-
 import {
   SafeAreaView,
   FlatList,
@@ -29,6 +26,9 @@ import {
   View,
   NativeScrollEvent,
 } from 'react-native';
+
+const minHeaderHeight = 70;
+const maxHeaderHeight = Dimensions.get('window').height / 4;
 
 const App = () => {
   // Dummy Data to show inside the scrollView
